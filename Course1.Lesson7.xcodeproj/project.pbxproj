@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC6337792A8D44F400328C4F /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6337782A8D44F400328C4F /* AppConst.swift */; };
+		DC63377B2A8D4A1E00328C4F /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63377A2A8D4A1E00328C4F /* FriendsModel.swift */; };
+		DC63377D2A8D4A3F00328C4F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63377C2A8D4A3F00328C4F /* Repository.swift */; };
+		DC6337812A8D580900328C4F /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6337802A8D580900328C4F /* NetworkRepository.swift */; };
+		DC6337832A8D638600328C4F /* LocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6337822A8D638600328C4F /* LocalRepository.swift */; };
+		DC6337852A8D63AF00328C4F /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6337842A8D63AF00328C4F /* Navigation.swift */; };
 		DC737B762A8CA64C0025325C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC737B752A8CA64C0025325C /* AppDelegate.swift */; };
 		DC737B782A8CA64C0025325C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC737B772A8CA64C0025325C /* SceneDelegate.swift */; };
-		DC737B7A2A8CA64C0025325C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC737B792A8CA64C0025325C /* ViewController.swift */; };
-		DC737B802A8CA64C0025325C /* Course1_Lesson7.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC737B7E2A8CA64C0025325C /* Course1_Lesson7.xcdatamodeld */; };
+		DC737B7A2A8CA64C0025325C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC737B792A8CA64C0025325C /* AuthViewController.swift */; };
+		DC737B802A8CA64C0025325C /* Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC737B7E2A8CA64C0025325C /* Core_Data.xcdatamodeld */; };
 		DC737B822A8CA6500025325C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC737B812A8CA6500025325C /* Assets.xcassets */; };
 		DC737B852A8CA6500025325C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC737B832A8CA6500025325C /* LaunchScreen.storyboard */; };
 		DC737B902A8CA6500025325C /* Course1_Lesson7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC737B8F2A8CA6500025325C /* Course1_Lesson7Tests.swift */; };
 		DC737B9A2A8CA6500025325C /* Course1_Lesson7UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC737B992A8CA6500025325C /* Course1_Lesson7UITests.swift */; };
 		DC737B9C2A8CA6500025325C /* Course1_Lesson7UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC737B9B2A8CA6500025325C /* Course1_Lesson7UITestsLaunchTests.swift */; };
+		DC8806422A8DF4230075F722 /* DI_Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8806412A8DF4230075F722 /* DI_Container.swift */; };
+		DC8806442A8DF7870075F722 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8806432A8DF7870075F722 /* FriendsViewController.swift */; };
+		DC8806462A8DF9C40075F722 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8806452A8DF9C40075F722 /* AppTheme.swift */; };
+		DC8806482A8E06D90075F722 /* RepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8806472A8E06D90075F722 /* RepositoryImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC6337782A8D44F400328C4F /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
+		DC63377A2A8D4A1E00328C4F /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
+		DC63377C2A8D4A3F00328C4F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DC6337802A8D580900328C4F /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
+		DC6337822A8D638600328C4F /* LocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepository.swift; sourceTree = "<group>"; };
+		DC6337842A8D63AF00328C4F /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		DC737B722A8CA64C0025325C /* Course1.Lesson7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Course1.Lesson7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC737B752A8CA64C0025325C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC737B772A8CA64C0025325C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC737B792A8CA64C0025325C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC737B792A8CA64C0025325C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		DC737B7F2A8CA64C0025325C /* Course1_Lesson7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Course1_Lesson7.xcdatamodel; sourceTree = "<group>"; };
 		DC737B812A8CA6500025325C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC737B842A8CA6500025325C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +65,10 @@
 		DC737B952A8CA6500025325C /* Course1.Lesson7UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Course1.Lesson7UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC737B992A8CA6500025325C /* Course1_Lesson7UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course1_Lesson7UITests.swift; sourceTree = "<group>"; };
 		DC737B9B2A8CA6500025325C /* Course1_Lesson7UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course1_Lesson7UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC8806412A8DF4230075F722 /* DI_Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI_Container.swift; sourceTree = "<group>"; };
+		DC8806432A8DF7870075F722 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		DC8806452A8DF9C40075F722 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		DC8806472A8E06D90075F722 /* RepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +96,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC6337742A8D3FCB00328C4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC8806432A8DF7870075F722 /* FriendsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC6337752A8D3FD700328C4F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DC6337782A8D44F400328C4F /* AppConst.swift */,
+				DC6337842A8D63AF00328C4F /* Navigation.swift */,
+				DC8806412A8DF4230075F722 /* DI_Container.swift */,
+				DC8806452A8DF9C40075F722 /* AppTheme.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DC6337762A8D3FE100328C4F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DC63377C2A8D4A3F00328C4F /* Repository.swift */,
+				DC8806472A8E06D90075F722 /* RepositoryImpl.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DC6337772A8D3FEC00328C4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC6337802A8D580900328C4F /* NetworkRepository.swift */,
+				DC6337822A8D638600328C4F /* LocalRepository.swift */,
+				DC737B7E2A8CA64C0025325C /* Core_Data.xcdatamodeld */,
+				DC63377A2A8D4A1E00328C4F /* FriendsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DC737B692A8CA64C0025325C = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +158,16 @@
 		DC737B742A8CA64C0025325C /* Course1.Lesson7 */ = {
 			isa = PBXGroup;
 			children = (
+				DC6337772A8D3FEC00328C4F /* Model */,
+				DC6337762A8D3FE100328C4F /* Domain */,
+				DC6337752A8D3FD700328C4F /* Core */,
+				DC6337742A8D3FCB00328C4F /* View */,
 				DC737B752A8CA64C0025325C /* AppDelegate.swift */,
 				DC737B772A8CA64C0025325C /* SceneDelegate.swift */,
-				DC737B792A8CA64C0025325C /* ViewController.swift */,
+				DC737B792A8CA64C0025325C /* AuthViewController.swift */,
 				DC737B812A8CA6500025325C /* Assets.xcassets */,
 				DC737B832A8CA6500025325C /* LaunchScreen.storyboard */,
 				DC737B862A8CA6500025325C /* Info.plist */,
-				DC737B7E2A8CA64C0025325C /* Course1_Lesson7.xcdatamodeld */,
 			);
 			path = Course1.Lesson7;
 			sourceTree = "<group>";
@@ -257,10 +319,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC737B802A8CA64C0025325C /* Course1_Lesson7.xcdatamodeld in Sources */,
-				DC737B7A2A8CA64C0025325C /* ViewController.swift in Sources */,
+				DC63377D2A8D4A3F00328C4F /* Repository.swift in Sources */,
+				DC737B802A8CA64C0025325C /* Core_Data.xcdatamodeld in Sources */,
+				DC6337812A8D580900328C4F /* NetworkRepository.swift in Sources */,
+				DC737B7A2A8CA64C0025325C /* AuthViewController.swift in Sources */,
+				DC8806462A8DF9C40075F722 /* AppTheme.swift in Sources */,
+				DC8806482A8E06D90075F722 /* RepositoryImpl.swift in Sources */,
+				DC8806442A8DF7870075F722 /* FriendsViewController.swift in Sources */,
+				DC6337832A8D638600328C4F /* LocalRepository.swift in Sources */,
 				DC737B762A8CA64C0025325C /* AppDelegate.swift in Sources */,
+				DC63377B2A8D4A1E00328C4F /* FriendsModel.swift in Sources */,
+				DC8806422A8DF4230075F722 /* DI_Container.swift in Sources */,
+				DC6337852A8D63AF00328C4F /* Navigation.swift in Sources */,
 				DC737B782A8CA64C0025325C /* SceneDelegate.swift in Sources */,
+				DC6337792A8D44F400328C4F /* AppConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,13 +666,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DC737B7E2A8CA64C0025325C /* Course1_Lesson7.xcdatamodeld */ = {
+		DC737B7E2A8CA64C0025325C /* Core_Data.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				DC737B7F2A8CA64C0025325C /* Course1_Lesson7.xcdatamodel */,
 			);
 			currentVersion = DC737B7F2A8CA64C0025325C /* Course1_Lesson7.xcdatamodel */;
-			path = Course1_Lesson7.xcdatamodeld;
+			path = Core_Data.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
