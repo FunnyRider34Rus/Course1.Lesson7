@@ -7,8 +7,11 @@
 
 import Foundation
 
+// MARK: - AppConst
+/// Утилитарное перечисление с глобальными константами
+/// 
 enum AppConst {
     static let appCode = Bundle.main.object(forInfoDictionaryKey: "AppCode")
-    static var token: String?
-    static var userID: String?
+    static var token: String = ""
+    static var userID: String = ""
 }

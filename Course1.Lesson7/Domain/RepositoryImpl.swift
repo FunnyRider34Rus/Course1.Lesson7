@@ -6,13 +6,20 @@
 //
 
 import Foundation
+import UIKit
 
 final class RepositoryImpl: Repository {
     
     private let network = NetworkRepository()
     private let local = LocalRepository()
+    private var mFriends: Array<Friend> = []
     
-    func getFriends() -> [Friend] {
-        return []
+    func getFriends() -> Array<Friend> {
+        if (network.getFriends().isEmpty) {
+            mFriends = local.getFriends()
+        } else {
+            mFriends = network.getFriends()
+        }
+        return mFriends
     }
 }

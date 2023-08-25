@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - AppTheme
+
 enum AllAppTheme: String {
     case day
     case night

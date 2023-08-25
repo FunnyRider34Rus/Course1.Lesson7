@@ -10,6 +10,8 @@ import WebKit
 
 class AuthViewController: UIViewController {
     
+// MARK: - WKWebView
+    
     private lazy var webView: WKWebView = {
         let webView = WKWebView(frame: view.bounds)
         webView.navigationDelegate = self
@@ -33,11 +35,14 @@ class AuthViewController: UIViewController {
         guard let url else {
             return
         }
+        
         view.backgroundColor = Theme.currentTheme.backgroundColor
         webView.load(URLRequest(url: url))
         view.addSubview(webView)
     }
 }
+
+// MARK: - WKNavigationDelegate
 
 extension AuthViewController: WKNavigationDelegate {
     
