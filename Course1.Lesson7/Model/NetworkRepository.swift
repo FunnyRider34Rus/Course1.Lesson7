@@ -10,26 +10,26 @@ import Foundation
 class NetworkRepository {
     
     private let session = URLSession.shared
-    private var mFriends: Array<Friend> = []
     
-    func getFriends() -> [Friend] {
+    func getFriends(completion: @escaping(Result<[Friend], Error>) -> Void) {
         guard let url = URL(string: "https://api.vk.com/method/friends.get?user_id=\(AppConst.userID)&access_token=\(AppConst.token)&fields=photo_50,online&v=5.131")
             else {
-                return []
+                return
             }
-            
-        session.dataTask(with: url) { [self] (data, _, error) in
-                guard let data = data else {
-                    return
-                }
-                do {
-                    let friends = try JSONDecoder().decode(FriendsModel.self, from: data)
-                    mFriends = friends.response.items
-                    print(mFriends)
-                } catch {
-                    print(error)
-                }
-            }.resume()
-        return mFriends
+        
+        session.dataTask(with: url) { (data, _, error) in
+            guard let data = data else {
+                completion(.failure(Error.self as! Error))
+                return
+            }
+
+            do {
+                let friends = try JSONDecoder().decode(FriendsModel.self, from: data)
+                completion(.success(friends.response.items))
+                //print(friends)
+            } catch {
+                completion(.failure(error))
+            }
+        }.resume()
     }
 }

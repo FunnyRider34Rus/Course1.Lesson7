@@ -16,8 +16,8 @@ class FriendsViewController: UITableViewController {
     // MARK: - Instance Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        models = repository.getFriends()
         setupViews()
+        update()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,11 +33,19 @@ class FriendsViewController: UITableViewController {
         return cell
     }
     
+    @objc func update() {
+        models = repository.getFriends()
+        tableView.reloadData()
+        refreshControl?.endRefreshing()
+    }
+    
     // MARK: - Private Methods
     private func setupViews() {
         title = "Friends"
         view.backgroundColor = Theme.currentTheme.backgroundColor
         tableView.backgroundColor = Theme.currentTheme.backgroundColor
         tableView.register(FriendsViewCell.self, forCellReuseIdentifier: "FriendCell")
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(update), for: .valueChanged)
     }
 }

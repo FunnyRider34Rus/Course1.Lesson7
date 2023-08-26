@@ -36,7 +36,7 @@ final class LocalRepository {
         save()
     }
     
-    func addFriens(friends: [Friend]) {
+    func addFriends(friends: [Friend]) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "FriendModelCD")
         for friend in friends {
             fetchRequest.predicate = NSPredicate(format: "id = %@", argumentArray: [friend.id])

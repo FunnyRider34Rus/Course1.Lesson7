@@ -12,13 +12,16 @@ final class RepositoryImpl: Repository {
     
     private let network = NetworkRepository()
     private let local = LocalRepository()
-    private var mFriends: Array<Friend> = []
     
     func getFriends() -> Array<Friend> {
-        if (network.getFriends().isEmpty) {
-            mFriends = local.getFriends()
-        } else {
-            mFriends = network.getFriends()
+        var mFriends: Array<Friend> = local.getFriends()
+        network.getFriends {
+            [weak self] result in
+               switch result {
+                   case .success(let friends): mFriends = friends
+                        self?.local.addFriends(friends: friends)
+                    case .failure(_): return
+               }
         }
         return mFriends
     }

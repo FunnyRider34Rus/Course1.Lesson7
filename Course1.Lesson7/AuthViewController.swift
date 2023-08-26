@@ -22,7 +22,6 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
         
         setupWebView()
-        navigation()
     }
     
     private func setupWebView() {
@@ -74,5 +73,6 @@ extension AuthViewController: WKNavigationDelegate {
 
         decisionHandler(.cancel)
         webView.removeFromSuperview()
+        navigation()
     }
 }
