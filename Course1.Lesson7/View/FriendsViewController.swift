@@ -11,7 +11,6 @@ class FriendsViewController: UITableViewController {
     
     // MARK: - Instance Properties
     private var models: [Friend] = []
-    private var repository: Repository = RepositoryImpl()
     
     // MARK: - Instance Methods
     override func viewDidLoad() {
@@ -34,7 +33,7 @@ class FriendsViewController: UITableViewController {
     }
     
     @objc func update() {
-        models = repository.getFriends()
+        models = AppDelegate.shared.repository.getFriends()
         tableView.reloadData()
         refreshControl?.endRefreshing()
     }

@@ -23,6 +23,7 @@
 		DC737B9A2A8CA6500025325C /* Course1_Lesson7UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC737B992A8CA6500025325C /* Course1_Lesson7UITests.swift */; };
 		DC737B9C2A8CA6500025325C /* Course1_Lesson7UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC737B9B2A8CA6500025325C /* Course1_Lesson7UITestsLaunchTests.swift */; };
 		DC7865AC2A8EA03300924CB8 /* FriendsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7865AB2A8EA03300924CB8 /* FriendsViewCell.swift */; };
+		DC8424572A9A6F5D00E2B900 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8424562A9A6F5D00E2B900 /* DI.swift */; };
 		DC8806442A8DF7870075F722 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8806432A8DF7870075F722 /* FriendsViewController.swift */; };
 		DC8806462A8DF9C40075F722 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8806452A8DF9C40075F722 /* AppTheme.swift */; };
 		DC8806482A8E06D90075F722 /* RepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8806472A8E06D90075F722 /* RepositoryImpl.swift */; };
@@ -66,6 +67,7 @@
 		DC737B992A8CA6500025325C /* Course1_Lesson7UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course1_Lesson7UITests.swift; sourceTree = "<group>"; };
 		DC737B9B2A8CA6500025325C /* Course1_Lesson7UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course1_Lesson7UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DC7865AB2A8EA03300924CB8 /* FriendsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewCell.swift; sourceTree = "<group>"; };
+		DC8424562A9A6F5D00E2B900 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		DC8806432A8DF7870075F722 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		DC8806452A8DF9C40075F722 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		DC8806472A8E06D90075F722 /* RepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImpl.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				DC6337782A8D44F400328C4F /* AppConst.swift */,
 				DC6337842A8D63AF00328C4F /* Navigation.swift */,
 				DC8806452A8DF9C40075F722 /* AppTheme.swift */,
+				DC8424562A9A6F5D00E2B900 /* DI.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				DC8806482A8E06D90075F722 /* RepositoryImpl.swift in Sources */,
 				DC8806442A8DF7870075F722 /* FriendsViewController.swift in Sources */,
 				DC6337832A8D638600328C4F /* LocalRepository.swift in Sources */,
+				DC8424572A9A6F5D00E2B900 /* DI.swift in Sources */,
 				DC737B762A8CA64C0025325C /* AppDelegate.swift in Sources */,
 				DC63377B2A8D4A1E00328C4F /* FriendsModel.swift in Sources */,
 				DC6337852A8D63AF00328C4F /* Navigation.swift in Sources */,

@@ -9,5 +9,5 @@ import Foundation
 
 protocol Repository {
     
-    func getFriends() -> [Friend]
+    func getFriends() -> Array<Friend>
 }

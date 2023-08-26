@@ -10,16 +10,13 @@ import UIKit
 
 final class RepositoryImpl: Repository {
     
-    private let network = NetworkRepository()
-    private let local = LocalRepository()
-    
     func getFriends() -> Array<Friend> {
-        var mFriends: Array<Friend> = local.getFriends()
-        network.getFriends {
-            [weak self] result in
+        var mFriends: Array<Friend> = AppDelegate.shared.local.getFriends()
+        AppDelegate.shared.network.getFriends {
+            result in
                switch result {
                    case .success(let friends): mFriends = friends
-                        self?.local.addFriends(friends: friends)
+                        AppDelegate.shared.local.addFriends(friends: friends)
                     case .failure(_): return
                }
         }
