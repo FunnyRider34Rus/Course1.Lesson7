@@ -8,6 +8,7 @@
 import Foundation
 
 protocol Repository {
-    
+    // MARK: - Instance Methods
+    /// Функция получения массива моделей Friend
     func getFriends() -> Array<Friend>
 }

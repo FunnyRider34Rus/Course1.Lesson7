@@ -10,6 +10,7 @@ import UIKit
 class FriendsViewController: UITableViewController {
     
     // MARK: - Instance Properties
+    /// Массив модели Fiends
     private var models: [Friend] = []
     
     // MARK: - Instance Methods
@@ -32,6 +33,7 @@ class FriendsViewController: UITableViewController {
         return cell
     }
     
+    /// Функция обработки refresh
     @objc func update() {
         models = AppDelegate.shared.repository.getFriends()
         tableView.reloadData()
@@ -39,6 +41,7 @@ class FriendsViewController: UITableViewController {
     }
     
     // MARK: - Private Methods
+    /// Настройка view
     private func setupViews() {
         title = "Friends"
         view.backgroundColor = Theme.currentTheme.backgroundColor

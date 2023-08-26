@@ -11,7 +11,11 @@ import Foundation
 /// Утилитарное перечисление с глобальными константами
 /// 
 enum AppConst {
+    /// Код приложения
+    ///     используется для получения token
     static let appCode = Bundle.main.object(forInfoDictionaryKey: "AppCode")
+    /// Token
     static var token: String = ""
+    /// ID пользователя
     static var userID: String = ""
 }

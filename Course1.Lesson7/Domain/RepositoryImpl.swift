@@ -10,6 +10,8 @@ import UIKit
 
 final class RepositoryImpl: Repository {
     
+    // MARK: - Instance Methods
+    /// Имплементация функции получения массива модели Friend
     func getFriends() -> Array<Friend> {
         var mFriends: Array<Friend> = AppDelegate.shared.local.getFriends()
         AppDelegate.shared.network.getFriends {
