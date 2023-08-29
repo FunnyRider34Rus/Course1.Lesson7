@@ -15,6 +15,13 @@ struct Friends: Decodable {
     var items: [Friend]
 }
 
+/// Модель Friend
+///     - поля:
+///         id - ID пользователя;
+///         firstName - имя;
+///         lastName - фамилия;
+///         photo - ссылка на фото;
+///         online - сетевой статус;
 struct Friend: Decodable {
     var id: Int
     var firstName: String?
